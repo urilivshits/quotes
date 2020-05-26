@@ -1,0 +1,82 @@
+body {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd091;
+    background: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    text-transform: capitalize;
+
+    color: #333;
+    font-family: "calibri", sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: #fff; 
+    flex: 0 50% 50%;
+}
+
+#quoteBtn {
+    border: none;
+    color: #fff;
+    background: #d89156;
+    font-size: 1.3rem;
+    padding: 0.24rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    text-transform: capitalize;
+}
+
+#quoteBtn:hover {
+    color: #ffd000;
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #fcdbbf;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    
+}
+
+#quoteAuthor {
+    color: #ffd000;
+}
+
+@media only screen and (max-width: 414px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: 350%;
+        background-position: center; 
+        background-color: #ffd091;
+    }
+
+    
+    #quoteBtn {
+        align-items: center;
+        justify-content: center;
+        text-justify: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 0.5rem 0.5rem;
+        border-radius: 5px;
+        width: 100%;
+        cursor: pointer;
+        outline: none;
+        text-transform: capitalize;
+        border: 5px solid #f9f9f9;
+        background-color: #faaa64;
+    }
+
+    
+
+}
